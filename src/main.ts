@@ -34,18 +34,18 @@ let routeHistoryLayer: GraphicsLayer; // Layer for trail paths
 const historicalPositions = new Map<string, { lon: number, lat: number }>();
 
 // CHECK_STATUS: Add this at the top of your script file to persist coordinates between updates
-//const positionStabilityTracker = new Map<string, { lat: number; lon: number; staticCount: number }>();
+
 let activeTrainHighlight: any = null;
 let activeTrailHighlight: any = null;
-
 
 // Fallback color if an unexpected code appears
 const DEFAULT_LINE_COLOR = '#00f2fe';
 
-
 // Load Train Stops location data from geojson files
 let stationList: Array<{ name: string; point: Point }> = [];
+import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer";
 
+// Function to load Stations layer GeoJSON File
 async function loadStations() {
   try {
     const response = await fetch("/data/train_stops.geojson");
@@ -68,9 +68,8 @@ async function loadStations() {
 // --- STEP 1: Load Train station from train_stops.geojson ---
 loadStations();
 
-import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer";
 
-// --- TRAIN STATIONS LAYER WITH TEXT LABELS ---
+// --- STEP 2:Create TRAIN STATIONS as GeoJSON LAYER for Map WITH TEXT LABELS ---
 const stationLayer = new GeoJSONLayer({
   url: "/data/train_stops.geojson", // or imported relative path
   title: "Train Stations",
@@ -120,7 +119,7 @@ const stationLayer = new GeoJSONLayer({
 
 
 
-// --- STEP 2: Fetch and process live coordinates from Vercel ---
+// --- STEP 3: Fetch and process live coordinates from Vercel ---
 async function fetchLiveTrainPositions() {
   try {
     const response = await fetch('https://metro-train-server.vercel.app/trains-details');
@@ -340,7 +339,7 @@ function renderTrains(trainData: Array<{ id: string, line: string, lon: number, 
 
 
 
-// --- STEP 3: Boot up the map window and set intervals ---
+// --- STEP 4: Boot up the map window and set intervals ---
 async function initializeMap() {
   const sceneElement = document.querySelector("#safety-scene") as any;
   if (!sceneElement) return;
@@ -472,7 +471,7 @@ if (document.readyState === "loading") {
   initializeMap();
 }
 
-// Step 4: Update sidepanelms how the number of trains on each line
+// Step 5: Update sidepanelms how the number of trains on each line
 function updateSidePanelCounters() {
   const allTrains = trainLayer.graphics.toArray();
   const totalCount = allTrains.length;
