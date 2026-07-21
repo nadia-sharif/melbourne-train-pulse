@@ -1,11 +1,16 @@
+// 1. Stylesheets
 import './style.css'; // Adjust path if style.css is elsewhere, e.g., './styles/style.css'
 
+// 2. Utils file Components
 import { generateStatusMarkup, generateLineItemMarkup, getHaversineDistanceMeters, trainLineColors, trainLineNames } from './utils';
 
+
+// 3. ArcGIS Map Components
 import esriConfig from "@arcgis/core/config.js";
 import "@arcgis/map-components/dist/components/arcgis-scene";
 import "@arcgis/map-components/dist/components/arcgis-zoom";
 
+// 4. Calcite Components
 import "@esri/calcite-components/dist/components/calcite-shell";
 import "@esri/calcite-components/dist/components/calcite-navigation";
 import "@esri/calcite-components/dist/components/calcite-navigation-logo";
