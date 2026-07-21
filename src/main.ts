@@ -48,7 +48,9 @@ import GeoJSONLayer from "@arcgis/core/layers/GeoJSONLayer";
 // Function to load Stations layer GeoJSON File
 async function loadStations() {
   try {
-    const response = await fetch("/data/train_stops.geojson");
+    //const response = await fetch("/data/train_stops.geojson");
+    // For GitHub Pages, update the path
+    const response = await fetch(`${import.meta.env.BASE_URL}data/train_stops.geojson`);
     const stationGeoJSON = await response.json();
 
     stationList = stationGeoJSON.features.map((feature: any) => ({
