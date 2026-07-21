@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melbourne Transit Pulse</title>
+  
+  <!-- IMPORT EXTERNAL CSS HERE FOR VITE -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <calcite-shell>
+    
+    <!-- HEADER -->
+    <calcite-navigation slot="header">
+      <calcite-navigation-logo 
+        slot="logo" 
+        heading="MELBOURNE TRANSIT PULSE"
+        description="Real-Time Network Dynamics & Spatial Twin">
+      </calcite-navigation-logo>
+    </calcite-navigation>
+
+    <!-- LEFT SIDEBAR PANEL -->
+    <calcite-shell-panel slot="panel-start" width-scale="m">
+      
+      <!-- PANEL 1: ABOUT & GUIDE -->
+      <calcite-panel>
+        <div class="panel-inner-container">
+
+          <!-- About Text -->
+          <p class="about-text">
+            Welcome to <strong>Melbourne Transit Pulse</strong>—a live map showing Melbourne's trains moving in real time.
+             This app uses live public transport data from Transport Victoria to show how the train network moves throughout the day.
+             The data is updated every 30 seconds.
+          </p>
+
+          <!-- How To Use -->
+          <div class="section-label how-to-label">
+            HOW TO USE
+          </div>
+
+          <div class="instructions-list">
+            <div class="instruction-item">
+              <span class="icon-badge icon-badge-blue">🔍</span>
+              <span><strong>Zoom</strong> to view stations.</span>
+            </div>
+
+            <div class="instruction-item">
+              <span class="icon-badge icon-badge-green">🚆</span>
+              <span><strong>Click</strong> a train for live details.</span>
+            </div>
+          </div>
+
+          <!-- Train Legend -->
+          <div class="legend-card">
+            <div class="section-label">
+              TRAIN LEGEND
+            </div>
+
+            <div class="legend-items">
+              <div class="legend-item">
+                <span class="legend-symbol">▲</span> Moving
+              </div>
+
+              <div class="legend-item">
+                <span class="legend-symbol">⚫</span> Stationary
+              </div>
+
+              <div class="legend-item">
+                <span class="legend-symbol">⋯⋯</span> Path
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- CLOSED CONTAINER DIV FIXES SHADOW DOM / MAP BREAKAGE -->
+      </calcite-panel>
+
+      <!-- PANEL 2: DYNAMIC LIVE STATUS -->
+      <calcite-panel id="transit-side-panel" heading="Live Network Status">
+        <!-- Injected via TypeScript -->
+      </calcite-panel>
+
+    </calcite-shell-panel>
+
+    <!-- 3D ARCGIS SCENE (SLOTTED DIRECTLY INTO SHELL MAIN CONTENT) -->
+    <arcgis-scene basemap="dark-gray-vector" id="safety-scene">
+      <arcgis-zoom position="top-right"></arcgis-zoom>
+    </arcgis-scene>
+
+  </calcite-shell>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
