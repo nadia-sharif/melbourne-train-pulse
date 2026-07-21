@@ -1,0 +1,1 @@
+var e={value:.5,readOnly:!0},t={readOnly:!0,value:.5,get(){return this.updating?this.updatingProgressValue:1}};export{t as n,e as t};

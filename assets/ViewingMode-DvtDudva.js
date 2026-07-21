@@ -1,0 +1,1 @@
+function e(e){return e===`global`?1:2}function t(e){return e===1?`global`:`local`}export{t as n,e as t};

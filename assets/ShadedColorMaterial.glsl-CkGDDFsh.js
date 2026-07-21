@@ -1,0 +1,1 @@
+import"./vec4f64-CjgU5APJ.js";import"./glsl-D85RBwKC.js";import"./View.glsl-u7L8AmT0.js";import"./Slice.glsl-CjvAkseN.js";import"./ColorConversion.glsl-C9xFjUmo.js";import"./ShaderBuilder-8uuwgR05.js";import"./OutputColorHighlightOLID.glsl-CzPahQyj.js";import"./Transform.glsl-CM6cQEqg.js";import{n as e}from"./ShadedColorMaterial.glsl-BVpKr1xq.js";export{e as build};

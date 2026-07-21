@@ -1,0 +1,1 @@
+import"./apiConverter-DZy-KmPx.js";import{i as e,r as t,t as n}from"./equalsOperator-VBWqNFzb.js";export{e as accelerateGeometry,n as execute,t as supportsCurves};

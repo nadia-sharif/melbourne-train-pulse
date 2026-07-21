@@ -1,0 +1,38 @@
+import{j as e}from"./arrayUtils-DXfY1bBO.js";import{n as t}from"./glsl-D85RBwKC.js";import{t as n}from"./FloatPassUniform-DeUP8HjM.js";import{t as r}from"./Texture2DBindUniform-4_yYNByJ.js";import{t as i}from"./ReadDepth.glsl-Ca_0z8Pl.js";import{t as a}from"./FloatsPassUniform-DfJ8EJ1F.js";import{t as o}from"./IntegerPassUniform-DN8CxRD1.js";import{t as s}from"./Texture2DPassUniform-CiCHIiok.js";import{t as c}from"./ShaderBuilder-8uuwgR05.js";import{t as l}from"./Gamma.glsl-BiRghhbe.js";import{n as u}from"./oitResolution.glsl-DHGKUwhe.js";import{t as d}from"./ditherNoise.glsl-UOpZ2vbN.js";import{t as f}from"./ToneMapping.glsl-BO4QToFy.js";import{t as p}from"./ScreenSpacePassAtmosphere.glsl-BUOp4Xvv.js";import{n as m,t as h}from"./DistanceFalloff.glsl-BirP-hBU.js";var g=class extends h{constructor(){super(...arguments),this.glowLod=-1,this.minDisperse=new v([32,16,8,4,2,1],1),this.maxDisperse=new v([0,.27,.6,1.05,1.58,2.1],6),this.fogOpacity=1e-4}};function _(e){let h=new c,g=h.fragment;return h.include(p,{needUVs:!0,needEyeDirection:!0}),g.include(l),g.include(m),g.include(i),h.outputs.add(`fragColor`,`vec4`,0),h.outputs.add(`fragEmission`,`vec3`,1),g.include(f),g.include(u,e),g.include(d,e),g.uniforms.add(new s(`colorTexture`,({color:e})=>e),new s(`emissionTexture`,({emission:e})=>e)),e.blurEnabled?(g.uniforms.add(new r(`depthTexture`,e=>e.mainDepth),new n(`fogOpacity`,e=>e.fogOpacity),new s(`lodTexture`,e=>e.lodTexture?.getTexture()),new o(`glowLod`,e=>e.glowLod),new a(`minDisperse`,6,e=>e.minDisperse.preset),new a(`maxDisperse`,6,e=>e.maxDisperse.preset)).main.add(t`vec4 color = texture(colorTexture, uv);
+color = vec4(linearizeGamma(color.rgb), color.a);
+vec3 lod0 = texture(emissionTexture, uv).rgb * floatBlendInputScale;
+vec3 lod1 = textureLod(lodTexture, uv, 0.0).rgb;
+vec3 lod2 = textureLod(lodTexture, uv, 1.0).rgb;
+vec3 lod3 = textureLod(lodTexture, uv, 2.0).rgb;
+vec3 lod4 = textureLod(lodTexture, uv, 3.0).rgb;
+vec3 lod5 = textureLod(lodTexture, uv, 4.0).rgb;
+float terrainDepth = -1.0;
+float depthSample = depthFromTexture(depthTexture, uv);
+if(depthSample < 1.0 && depthSample > 0.0){
+vec3 cameraSpaceRay = normalize(eyeDir);
+cameraSpaceRay /= cameraSpaceRay.z;
+cameraSpaceRay *= linearizeDepth(depthSample);
+terrainDepth = max(0.0, length(cameraSpaceRay));
+}
+vec3 rayDir = normalize(worldRay);
+float dispersionPerPixel = getDistanceFalloff(terrainDepth, rayDir, fogOpacity);
+float lodFactor0 = mix(minDisperse[0], maxDisperse[0], dispersionPerPixel);
+float lodFactor1 = mix(minDisperse[1], maxDisperse[1], dispersionPerPixel);
+float lodFactor2 = mix(minDisperse[2], maxDisperse[2], dispersionPerPixel);
+float lodFactor3 = mix(minDisperse[3], maxDisperse[3], dispersionPerPixel);
+float lodFactor4 = mix(minDisperse[4], maxDisperse[4], dispersionPerPixel);
+float lodFactor5 = mix(minDisperse[5], maxDisperse[5], dispersionPerPixel);
+vec3 emission = lodFactor0 * lod0;
+emission += lodFactor1 * lod1;
+emission += lodFactor2 * lod2;
+emission += lodFactor3 * lod3;
+emission += lodFactor4 * lod4;
+emission += lodFactor5 * lod5;
+emission = glowLod == 0 ? lodFactor0 * lod0 : glowLod == 1 ? lodFactor1 * lod1 : glowLod == 2 ? lodFactor2 * lod2 : glowLod == 3 ? lodFactor3 * lod3 : glowLod == 4 ? lodFactor4 * lod4 : glowLod == 5 ? lodFactor5 * lod5 : emission;
+fragEmission.rgb = emission.rgb * floatBlendOutputScale + ditherNoise(vec4(emission, color.a));
+emission = tonemapKhronosNeutral(emission);
+fragColor = delinearizeGamma(vec4(color.rgb + emission, color.w));`),h):(g.main.add(t`vec4 color = texture(colorTexture, uv);
+color = vec4(linearizeGamma(color.rgb), color.a);
+vec3 emission = texture(emissionTexture, uv).rgb * floatBlendInputScale;
+emission = tonemapKhronosNeutral(emission);
+fragColor = delinearizeGamma(vec4(color.rgb + emission, color.w));`),h)}var v=class{constructor(t,n){this.preset=t,e(t,n)}};function y(e,t,n=1){return[e[0]*(1-n)+t[0]*n,e[1]*(1-n)+t[1]*n,e[2]*(1-n)+t[2]*n,e[3]*(1-n)+t[3]*n,e[4]*(1-n)+t[4]*n,e[5]*(1-n)+t[5]*n]}var b=Object.freeze(Object.defineProperty({__proto__:null,GlowCompositionPassParameters:g,GlowLodFactors:v,build:_,mixPreset:y},Symbol.toStringTag,{value:`Module`}));export{g as a,_ as i,y as n,v as r,b as t};

@@ -1,0 +1,1 @@
+import{u as e}from"./vec3f64-DIOQknMY.js";import{T as t}from"./mathUtils-D79yUFwW.js";function n(e){return t((e-r)/i,0,1)}var r=1e5,i=1e6-r,a=1e4,o=e(5802e-9,13558e-9,331e-7),s=3,c=e(65e-8*s,1881e-9*s,85e-9*s),l=3996e-9,u=e(o[0]+c[0],o[1]+c[1],o[2]+c[2]);export{n as a,l as i,a as n,r as o,o as r,u as t};

@@ -1,0 +1,1 @@
+import"./HighlightDefaults-tjce7Po1.js";function e(e){return e?.name??`default`}export{e as t};

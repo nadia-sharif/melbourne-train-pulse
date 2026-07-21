@@ -1,0 +1,1 @@
+import{n as e,t}from"./AlphaCutoff-Dj4-LvkI.js";function n(n){n.constants.add(`alphaCutoff`,`float`,t),n.constants.add(`opacityCutoff`,`float`,e)}export{n as t};

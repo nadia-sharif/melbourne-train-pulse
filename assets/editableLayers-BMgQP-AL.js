@@ -1,0 +1,1 @@
+import{I as e,m as t,s as n}from"./layerUtils-BmH9VSbP.js";function r(e){return typeof e==`object`&&!!e&&`loaded`in e&&!0===e.loaded&&`type`in e}function i(i){return!(!r(i)||!n(i)?.operations?.supportsEditing||`editingEnabled`in i&&!t(i)||e(i))}export{i as t};

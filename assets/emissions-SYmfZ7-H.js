@@ -1,0 +1,1 @@
+var e=Symbol(`hasTransparencyModeSymbol`);function t(t){return e in t}function n(e){let t=0;return e.some(({emissions:e})=>e===3||e===2&&t===1||e===1&&t===2?(t=3,!0):(e!==0&&t===0&&(t=e),!1)),t}export{e as n,t as r,n as t};

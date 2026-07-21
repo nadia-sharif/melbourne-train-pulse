@@ -1,0 +1,1 @@
+import{o as e}from"./promiseUtils-CEeX94eL.js";import{a as t}from"./Scheduler-CigsybuA.js";function n(n){return r=>{if(n.destroyed){let n=r(t);return e(n)?n:Promise.resolve(n)}return n.immediate.schedule(r)}}export{n as t};

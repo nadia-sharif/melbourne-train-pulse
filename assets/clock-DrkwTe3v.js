@@ -1,0 +1,1 @@
+import{n as e}from"./handleUtils-Coa78TkJ.js";function t(t){return{setTimeout:(n,r)=>{let i=t.setTimeout(n,r);return e(()=>t.clearTimeout(i))}}}var n=t(globalThis);export{n as t};

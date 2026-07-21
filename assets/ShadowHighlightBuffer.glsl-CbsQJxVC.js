@@ -1,0 +1,5 @@
+import{n as e}from"./glsl-D85RBwKC.js";import{t}from"./Texture2DBindUniform-4_yYNByJ.js";import{t as n}from"./ScreenSpacePass.glsl-9L-_X5OK.js";import{t as r}from"./ShaderBuilder-8uuwgR05.js";import{n as i,t as a}from"./Texture2DShadowBindUniform-K3x5AtUd.js";import{t as o}from"./calculateUVZShadowFromDepth.glsl-BB3WDROO.js";function s(){let s=new r;return s.include(n),s.include(o),s.fragment.include(i),s.outputs.add(`fragShadow`,`float`),s.fragment.uniforms.add(new a(`shadowMapHighlight`,({shadowMap:e})=>e.getOutput(6)),new t(`depthMap`,e=>e.depth?.attachment)).main.add(e`fragShadow = 0.0;
+vec3 uvzShadow = calculateUVZShadowFromDepth(uv, textureSize(shadowMapHighlight, 0), depthMap);
+if (uvzShadow.z >= 0.0) {
+fragShadow = readShadowMapUVZ(uvzShadow, shadowMapHighlight);
+}`),s}var c=Object.freeze(Object.defineProperty({__proto__:null,build:s},Symbol.toStringTag,{value:`Module`}));export{s as n,c as t};

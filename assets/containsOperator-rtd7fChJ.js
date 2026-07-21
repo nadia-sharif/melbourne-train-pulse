@@ -1,0 +1,1 @@
+import"./SpatialReference-D64EaJnU.js";import"./apiConverter-DZy-KmPx.js";import{n as e,r as t,t as n}from"./containsOperator-DV3EjMGh.js";export{n as accelerateGeometry,t as execute,e as supportsCurves};

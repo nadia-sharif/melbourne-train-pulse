@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melbourne Transit Pulse</title>
+  
+  <!-- IMPORT EXTERNAL CSS HERE FOR VITE -->
+  <script type="module" crossorigin src="/assets/index-DbkcXvcw.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/typedArrayUtil-ob_YkLNY.js">
+  <link rel="modulepreload" crossorigin href="/assets/arrayUtils-DXfY1bBO.js">
+  <link rel="modulepreload" crossorigin href="/assets/Error-CDkGhU5E.js">
+  <link rel="modulepreload" crossorigin href="/assets/runtime-Dx7NYygJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/Theme-I2iXxtP8.js">
+  <link rel="modulepreload" crossorigin href="/assets/dom-B7PdIvut.js">
+  <link rel="modulepreload" crossorigin href="/assets/controllers-D2gy13eZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-loader-B4XsHxY8.js">
+  <link rel="modulepreload" crossorigin href="/assets/handleUtils-Coa78TkJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/tracking-eK-n_PtF.js">
+  <link rel="modulepreload" crossorigin href="/assets/ObservableBase-tBewJuL0.js">
+  <link rel="modulepreload" crossorigin href="/assets/SimpleObservable-lU6onAvU.js">
+  <link rel="modulepreload" crossorigin href="/assets/signal-BwtR6Sr1.js">
+  <link rel="modulepreload" crossorigin href="/assets/promiseUtils-CEeX94eL.js">
+  <link rel="modulepreload" crossorigin href="/assets/MapUtils-CdcpkzIf.js">
+  <link rel="modulepreload" crossorigin href="/assets/jsonMap-DI_BBbpz.js">
+  <link rel="modulepreload" crossorigin href="/assets/decorators-CMZ2M2tG.js">
+  <link rel="modulepreload" crossorigin href="/assets/nextTick-e2wXLyPh.js">
+  <link rel="modulepreload" crossorigin href="/assets/PooledArray-CkHfov6H.js">
+  <link rel="modulepreload" crossorigin href="/assets/time-BzYz5R50.js">
+  <link rel="modulepreload" crossorigin href="/assets/scheduling-DLz4UEMn.js">
+  <link rel="modulepreload" crossorigin href="/assets/uid-tFVEb1ZF.js">
+  <link rel="modulepreload" crossorigin href="/assets/Accessor-B8TvtW3i.js">
+  <link rel="modulepreload" crossorigin href="/assets/reactiveUtils-CxfsySTR.js">
+  <link rel="modulepreload" crossorigin href="/assets/request-CrXG-bU0.js">
+  <link rel="modulepreload" crossorigin href="/assets/assets-BDmlCghz.js">
+  <link rel="modulepreload" crossorigin href="/assets/locale-CJEovHBq.js">
+  <link rel="modulepreload" crossorigin href="/assets/UnknownTimeZone-B1xwyB_V.js">
+  <link rel="modulepreload" crossorigin href="/assets/timeZoneUtils-pCaZXr_t.js">
+  <link rel="modulepreload" crossorigin href="/assets/date-DNYvq6-2.js">
+  <link rel="modulepreload" crossorigin href="/assets/substitute-CmVrOO0f.js">
+  <link rel="modulepreload" crossorigin href="/assets/intl-CyUdqPOX.js">
+  <link rel="modulepreload" crossorigin href="/assets/Queue-C7IoDVI2.js">
+  <link rel="modulepreload" crossorigin href="/assets/workers-CkHWVE65.js">
+  <link rel="modulepreload" crossorigin href="/assets/Ellipsoid-Co4rBm1M.js">
+  <link rel="modulepreload" crossorigin href="/assets/pe-DBR93UVH.js">
+  <link rel="modulepreload" crossorigin href="/assets/spatialReferenceUtils-DQSPWmYw.js">
+  <link rel="modulepreload" crossorigin href="/assets/units-BVsWUEFD.js">
+  <link rel="modulepreload" crossorigin href="/assets/GeometryCursor-DCZpDRmr.js">
+  <link rel="modulepreload" crossorigin href="/assets/SimpleGeometryCursor-Bz9Gb7aZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/jsonTypeUtils-CLXH6hOE.js">
+  <link rel="modulepreload" crossorigin href="/assets/curveUtils-BWPbETle.js">
+  <link rel="modulepreload" crossorigin href="/assets/zscale-D7l_gI0q.js">
+  <link rel="modulepreload" crossorigin href="/assets/projectionZScaling-BFC--ry6.js">
+  <link rel="modulepreload" crossorigin href="/assets/projectOperator-DZVDUK8k.js">
+  <link rel="modulepreload" crossorigin href="/assets/dom-sQpEccYq.js">
+  <link rel="modulepreload" crossorigin href="/assets/useSetFocus-C6EmGpKr.js">
+  <link rel="modulepreload" crossorigin href="/assets/useFocusTrap-BkMAwCB6.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-focus-trap-Cdwzpyz8.js">
+  <link rel="modulepreload" crossorigin href="/assets/aria-Bb3XnTen.js">
+  <link rel="modulepreload" crossorigin href="/assets/observers-CMBMSDG2.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-icon-B7lLa6GW.js">
+  <link rel="modulepreload" crossorigin href="/assets/keyed-Cv0-k4h5.js">
+  <link rel="modulepreload" crossorigin href="/assets/useInteractive-B3Pp2gO2.js">
+  <link rel="modulepreload" crossorigin href="/assets/useFormTrigger-CyF5aypQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-action-CTG1RKmc.js">
+  <link rel="modulepreload" crossorigin href="/assets/debounce-CoJgRzLL.js">
+  <link rel="modulepreload" crossorigin href="/assets/key-_QmfBLzM.js">
+  <link rel="modulepreload" crossorigin href="/assets/manager-BqyR-wdp.js">
+  <link rel="modulepreload" crossorigin href="/assets/openCloseComponent-JVnRt9kw.js">
+  <link rel="modulepreload" crossorigin href="/assets/dynamicClasses-5T7a6PLK.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-dropdown-BucJYz-o.js">
+  <link rel="modulepreload" crossorigin href="/assets/resources8-BFhzc9lI.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-dropdown-item-DpofBwec.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-dropdown-group-BDAc6-yo.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils4-vgHTVAcX.js">
+  <link rel="modulepreload" crossorigin href="/assets/resources10-CGKplajX.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-list-item-D19_5tEH.js">
+  <link rel="modulepreload" crossorigin href="/assets/useCancelable-Bg_E8J_w.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-scrim-CqGSW2Kz.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-input-message-DEEp2Mjq.js">
+  <link rel="modulepreload" crossorigin href="/assets/label-cGcEB7uk.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-input-CpfTt39V.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-list-BMj897vs.js">
+  <link rel="modulepreload" crossorigin href="/assets/static-html-Ck1zos7s.js">
+  <link rel="modulepreload" crossorigin href="/assets/FloatingArrow-C7B65uG5.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-action-menu-fj0Di7gR.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-action-group-BTSR-g8m.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-action-bar-CcjEvo4l.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-list-item-group-rCbsVcIP.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-panel-B1TiwZx8.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-flow-item-DddhzgG-.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-button-BtZ9qrO8.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-flow-BDUJtHop.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-notice-B-G4dvCV.js">
+  <link rel="modulepreload" crossorigin href="/assets/sanitizerUtils-B7eAD1kv.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-label-6G4KwDd_.js">
+  <link rel="modulepreload" crossorigin href="/assets/tslib.es6-qUHyP9zl.js">
+  <link rel="modulepreload" crossorigin href="/assets/JSONSupport-BOkY6Npc.js">
+  <link rel="modulepreload" crossorigin href="/assets/Evented-DDbTqYcQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/Collection-D86xgTqO.js">
+  <link rel="modulepreload" crossorigin href="/assets/AttachmentInfo-nEb8UYlV.js">
+  <link rel="modulepreload" crossorigin href="/assets/guards-Mz9drnB9.js">
+  <link rel="modulepreload" crossorigin href="/assets/sql-BS6QT6eo.js">
+  <link rel="modulepreload" crossorigin href="/assets/fieldUtils-BSfrUezy.js">
+  <link rel="modulepreload" crossorigin href="/assets/fieldType-C_eMZHmj.js">
+  <link rel="modulepreload" crossorigin href="/assets/Field-c0XyC4VP.js">
+  <link rel="modulepreload" crossorigin href="/assets/Clonable-qnDl_ham.js">
+  <link rel="modulepreload" crossorigin href="/assets/SpatialReference-mGm6FnM7.js">
+  <link rel="modulepreload" crossorigin href="/assets/Point-BZDE8k4y.js">
+  <link rel="modulepreload" crossorigin href="/assets/Extent-BLXheTlP.js">
+  <link rel="modulepreload" crossorigin href="/assets/mathUtils-D79yUFwW.js">
+  <link rel="modulepreload" crossorigin href="/assets/aaBoundingRect-DovVGGT3.js">
+  <link rel="modulepreload" crossorigin href="/assets/common-DhvcAEWc.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec2-C5dJMieJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/mat3-BVwMHPeC.js">
+  <link rel="modulepreload" crossorigin href="/assets/mat3f64-B6tTkprt.js">
+  <link rel="modulepreload" crossorigin href="/assets/ellipticArc7Utils-C-D1S6Hw.js">
+  <link rel="modulepreload" crossorigin href="/assets/curveExtent-CevbxcR9.js">
+  <link rel="modulepreload" crossorigin href="/assets/zmUtils-BIHzD-XW.js">
+  <link rel="modulepreload" crossorigin href="/assets/Multipoint-B43T2D6Q.js">
+  <link rel="modulepreload" crossorigin href="/assets/coordsUtils-CuTtR8Kq.js">
+  <link rel="modulepreload" crossorigin href="/assets/Polygon-Co_dbSY7.js">
+  <link rel="modulepreload" crossorigin href="/assets/Polyline-BuzCN0aR.js">
+  <link rel="modulepreload" crossorigin href="/assets/jsonUtils-CHcGBIkJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/typeUtils-C7CXiEhe.js">
+  <link rel="modulepreload" crossorigin href="/assets/DynamicDataLayer-BH7DmBuF.js">
+  <link rel="modulepreload" crossorigin href="/assets/QuantizationParameters-Dk4rxocx.js">
+  <link rel="modulepreload" crossorigin href="/assets/StatisticDefinition-CVmb0vXB.js">
+  <link rel="modulepreload" crossorigin href="/assets/timeUtils-vKmBi7KD.js">
+  <link rel="modulepreload" crossorigin href="/assets/timeUnitKebabDictionary-DBN8Rtz_.js">
+  <link rel="modulepreload" crossorigin href="/assets/TimeExtent-CJsoRUsA.js">
+  <link rel="modulepreload" crossorigin href="/assets/Query-kVj-aBUB.js">
+  <link rel="modulepreload" crossorigin href="/assets/featureQueryAll-Fi9fkXiB.js">
+  <link rel="modulepreload" crossorigin href="/assets/Identifiable-CBufWf_k.js">
+  <link rel="modulepreload" crossorigin href="/assets/Promise-s6je0vDd.js">
+  <link rel="modulepreload" crossorigin href="/assets/Loadable-r7rvz8j0.js">
+  <link rel="modulepreload" crossorigin href="/assets/Layer-Db5Ugfn9.js">
+  <link rel="modulepreload" crossorigin href="/assets/layerUtils-BmH9VSbP.js">
+  <link rel="modulepreload" crossorigin href="/assets/popupTemplateUtils-DSE5r173.js">
+  <link rel="modulepreload" crossorigin href="/assets/asyncUtils-C0jhwOGq.js">
+  <link rel="modulepreload" crossorigin href="/assets/uuid-CxFjXsEJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/labelUtils-CUgLY_3r.js">
+  <link rel="modulepreload" crossorigin href="/assets/colorUtils-DZZ966ow.js">
+  <link rel="modulepreload" crossorigin href="/assets/Color-CmhB-YPB.js">
+  <link rel="modulepreload" crossorigin href="/assets/colorRamps-Cs9j-2W-.js">
+  <link rel="modulepreload" crossorigin href="/assets/RendererLegendOptions-CHlDpCF6.js">
+  <link rel="modulepreload" crossorigin href="/assets/opacityUtils-YOLSxoN0.js">
+  <link rel="modulepreload" crossorigin href="/assets/screenUtils-7zYZMDFt.js">
+  <link rel="modulepreload" crossorigin href="/assets/sizeVariableUtils-BhqsbgG_.js">
+  <link rel="modulepreload" crossorigin href="/assets/SimpleMarkerSymbol-h94DotII.js">
+  <link rel="modulepreload" crossorigin href="/assets/collectionUtils-FJxEjSKX.js">
+  <link rel="modulepreload" crossorigin href="/assets/apiKeyUtils-COuSn_gG.js">
+  <link rel="modulepreload" crossorigin href="/assets/Portal-DySYSyXh.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec3f64-DIOQknMY.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec3-C5q_s_3T.js">
+  <link rel="modulepreload" crossorigin href="/assets/mat4f64-E_FXCKxO.js">
+  <link rel="modulepreload" crossorigin href="/assets/DoubleArray-CH6Bxnae.js">
+  <link rel="modulepreload" crossorigin href="/assets/aaBoundingBox-zgCA6eHt.js">
+  <link rel="modulepreload" crossorigin href="/assets/symbolLayerUtils3D-DjNi_7YH.js">
+  <link rel="modulepreload" crossorigin href="/assets/TextSymbol-BKDs9URF.js">
+  <link rel="modulepreload" crossorigin href="/assets/PictureMarkerSymbol-BqkyEbUQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/MemCache-CZCSB9s8.js">
+  <link rel="modulepreload" crossorigin href="/assets/LRUCache-Ce5O8ikq.js">
+  <link rel="modulepreload" crossorigin href="/assets/typeUtils-C9F0uCHn.js">
+  <link rel="modulepreload" crossorigin href="/assets/getPopupProvider-b0mFGurM.js">
+  <link rel="modulepreload" crossorigin href="/assets/createFeatureId-KsRPeWV-.js">
+  <link rel="modulepreload" crossorigin href="/assets/graphicInstanceUtils-D6saJ7A1.js">
+  <link rel="modulepreload" crossorigin href="/assets/Graphic-CwtjMxW8.js">
+  <link rel="modulepreload" crossorigin href="/assets/lengthUtils-aHviHWE_.js">
+  <link rel="modulepreload" crossorigin href="/assets/visualVariableUtils-BZ0-25GF.js">
+  <link rel="modulepreload" crossorigin href="/assets/defaultsJSON-C6yXUC2u.js">
+  <link rel="modulepreload" crossorigin href="/assets/defaults-BKncj6Pm.js">
+  <link rel="modulepreload" crossorigin href="/assets/jsonUtils-DnxRf28z.js">
+  <link rel="modulepreload" crossorigin href="/assets/diffUtils-DXgVOVmV.js">
+  <link rel="modulepreload" crossorigin href="/assets/styleUtils-Fz1aPN71.js">
+  <link rel="modulepreload" crossorigin href="/assets/UniqueValueRenderer-D0n4tdnl.js">
+  <link rel="modulepreload" crossorigin href="/assets/SimpleRenderer-D0IVSMkm.js">
+  <link rel="modulepreload" crossorigin href="/assets/NormalizationBinParametersMixin-CqUxf3u-.js">
+  <link rel="modulepreload" crossorigin href="/assets/RelationshipQuery-BPNNLrIe.js">
+  <link rel="modulepreload" crossorigin href="/assets/featureLayerUtils-Z_GaK0q4.js">
+  <link rel="modulepreload" crossorigin href="/assets/ReactiveMap-Bi4qv7zF.js">
+  <link rel="modulepreload" crossorigin href="/assets/spatialReferenceEllipsoidUtils-DT-7lsTS.js">
+  <link rel="modulepreload" crossorigin href="/assets/GeographicTransformation-BvLOSjIB.js">
+  <link rel="modulepreload" crossorigin href="/assets/geodesicConstants-DfB1T2kw.js">
+  <link rel="modulepreload" crossorigin href="/assets/projectBuffer-D809E84L.js">
+  <link rel="modulepreload" crossorigin href="/assets/projectionUtils-DYP49ijh.js">
+  <link rel="modulepreload" crossorigin href="/assets/mat4-i5hbKyBt.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils-BqHcQoC1.js">
+  <link rel="modulepreload" crossorigin href="/assets/basemapDefinitions-CrYQ90Zs.js">
+  <link rel="modulepreload" crossorigin href="/assets/basemapUtils-Bf0GKl5K.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils-ByPw7uI1.js">
+  <link rel="modulepreload" crossorigin href="/assets/featureUtils-CPu_cQZ4.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils-Dm0LabK7.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureSet-BCfqaCPT.js">
+  <link rel="modulepreload" crossorigin href="/assets/jsonUtils-DpnNRrBr.js">
+  <link rel="modulepreload" crossorigin href="/assets/defaultCIMValues-DEXUkO0G.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils--QuRwy-9.js">
+  <link rel="modulepreload" crossorigin href="/assets/cimSymbolUtils-CF_W5NKW.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils-Cz0RNect.js">
+  <link rel="modulepreload" crossorigin href="/assets/ClassBreaksRenderer-BpbDeued.js">
+  <link rel="modulepreload" crossorigin href="/assets/enum-BMXlrJb1.js">
+  <link rel="modulepreload" crossorigin href="/assets/TimeOnly-DLTUDvOF.js">
+  <link rel="modulepreload" crossorigin href="/assets/FieldsIndex-CvwoYrHc.js">
+  <link rel="modulepreload" crossorigin href="/assets/ArcadeExpression-Z4bQOK_w.js">
+  <link rel="modulepreload" crossorigin href="/assets/Version-bFGJMcmY.js">
+  <link rel="modulepreload" crossorigin href="/assets/DictionaryScriptEvaluator-D3QUAvg8.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec4-B-G2J025.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec4f64-CjgU5APJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/heatmapUtils-BzSpi1o-.js">
+  <link rel="modulepreload" crossorigin href="/assets/typeUtils-MyGaInoD.js">
+  <link rel="modulepreload" crossorigin href="/assets/shared-A0Le2wpT.js">
+  <link rel="modulepreload" crossorigin href="/assets/isImageryGraphicOrigin-QUxSQ0x2.js">
+  <link rel="modulepreload" crossorigin href="/assets/isImageryTileGraphicOrigin-uK8NywvW.js">
+  <link rel="modulepreload" crossorigin href="/assets/FormTemplate-C0dWQyHE.js">
+  <link rel="modulepreload" crossorigin href="/assets/MultiOriginJSONSupport-BTF389FK.js">
+  <link rel="modulepreload" crossorigin href="/assets/layerContainerType-BtNSafr-.js">
+  <link rel="modulepreload" crossorigin href="/assets/GraphicOrigin-DSp_Ki0Z.js">
+  <link rel="modulepreload" crossorigin href="/assets/isFeatureGraphicOrigin-DeVT_Mou.js">
+  <link rel="modulepreload" crossorigin href="/assets/workers-C16bRgrO.js">
+  <link rel="modulepreload" crossorigin href="/assets/editsZScale-D2-As-vy.js">
+  <link rel="modulepreload" crossorigin href="/assets/APIKeyMixin-pEtsj4Tt.js">
+  <link rel="modulepreload" crossorigin href="/assets/ArcGISService-COjA1u2v.js">
+  <link rel="modulepreload" crossorigin href="/assets/BlendLayer-CL4eutIZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/CustomParametersMixin-CKEw-OQ9.js">
+  <link rel="modulepreload" crossorigin href="/assets/scaleUtils-DI1N29wx.js">
+  <link rel="modulepreload" crossorigin href="/assets/displayFilterUtils-ChhroljD.js">
+  <link rel="modulepreload" crossorigin href="/assets/DisplayFilteredLayer-DUIKoU2O.js">
+  <link rel="modulepreload" crossorigin href="/assets/versionManagementUtils-BFlliFHm.js">
+  <link rel="modulepreload" crossorigin href="/assets/EditBusLayer-BWXsjEWx.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureFilter-BQ3L2ICX.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureEffect-BbZ29Nk9.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureEffectLayer-BZqylZvD.js">
+  <link rel="modulepreload" crossorigin href="/assets/unitConversionUtils-BQmvruvg.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationInfo-CrM63Vuv.js">
+  <link rel="modulepreload" crossorigin href="/assets/commonProperties-D5lFpv2g.js">
+  <link rel="modulepreload" crossorigin href="/assets/HeightModelInfo-BWFXquSE.js">
+  <link rel="modulepreload" crossorigin href="/assets/Relationship-BJYmZF-w.js">
+  <link rel="modulepreload" crossorigin href="/assets/LayerFloorInfo-B69DbpcX.js">
+  <link rel="modulepreload" crossorigin href="/assets/multiLayerServiceUtils-CbenEUFP.js">
+  <link rel="modulepreload" crossorigin href="/assets/infoFor3D-DW2pb_QZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/sqlVisitor-BS1bqGqO.js">
+  <link rel="modulepreload" crossorigin href="/assets/relativeTimeQueryUtils-BwfzhBNQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/serviceCapabilitiesUtils-B86XrDoQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/portalItemUtils-CBw6m6PS.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureLayerBase-DtVH4Qi3.js">
+  <link rel="modulepreload" crossorigin href="/assets/fieldConfigUtils-AD0EGGEL.js">
+  <link rel="modulepreload" crossorigin href="/assets/labelingInfo-BOLI6yUD.js">
+  <link rel="modulepreload" crossorigin href="/assets/jsonUtils-C-oVNvGo.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureReductionSelection-riqox9pn.js">
+  <link rel="modulepreload" crossorigin href="/assets/MD5-DmwJezQw.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureReductionLayer-BuKgdNPT.js">
+  <link rel="modulepreload" crossorigin href="/assets/layersMapping-BlWmWfkF.js">
+  <link rel="modulepreload" crossorigin href="/assets/OperationalLayer-Brz2v_AV.js">
+  <link rel="modulepreload" crossorigin href="/assets/OrderedLayer-zaZc2FO7.js">
+  <link rel="modulepreload" crossorigin href="/assets/PortalItem-DS6FmK-y.js">
+  <link rel="modulepreload" crossorigin href="/assets/PortalLayer-DqkUGpcd.js">
+  <link rel="modulepreload" crossorigin href="/assets/RefreshableLayer-SKG570Ql.js">
+  <link rel="modulepreload" crossorigin href="/assets/ScaleRangeLayer-CXibGneI.js">
+  <link rel="modulepreload" crossorigin href="/assets/TimeInfo-CM5T09ic.js">
+  <link rel="modulepreload" crossorigin href="/assets/TemporalLayer-za6BpuYa.js">
+  <link rel="modulepreload" crossorigin href="/assets/TrackableLayer-CtiI5lpP.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureTemplate-Bnfsh7wD.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureType-CZ__-k6G.js">
+  <link rel="modulepreload" crossorigin href="/assets/fieldProperties-Db4kwZ-a.js">
+  <link rel="modulepreload" crossorigin href="/assets/TitleCreator-CwYmNJbi.js">
+  <link rel="modulepreload" crossorigin href="/assets/versionUtils-CLinuaP8.js">
+  <link rel="modulepreload" crossorigin href="/assets/styleUtils-6Kgx2XH9.js">
+  <link rel="modulepreload" crossorigin href="/assets/popupUtils-C2CUU6if.js">
+  <link rel="modulepreload" crossorigin href="/assets/FeatureLayer-B0mCVypK.js">
+  <link rel="modulepreload" crossorigin href="/assets/streamLayerUtils-BU6tmGf7.js">
+  <link rel="modulepreload" crossorigin href="/assets/throttle-BqB_MA1r.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils-BgId76uT.js">
+  <link rel="modulepreload" crossorigin href="/assets/Cyclical-D45qe_j1.js">
+  <link rel="modulepreload" crossorigin href="/assets/normalizeUtilsCommon-CCuAam6P.js">
+  <link rel="modulepreload" crossorigin href="/assets/memoize-BAPO658v.js">
+  <link rel="modulepreload" crossorigin href="/assets/densifyCurvedGeometry-C16qvMh1.js">
+  <link rel="modulepreload" crossorigin href="/assets/utils-BFSuDnuc.js">
+  <link rel="modulepreload" crossorigin href="/assets/normalizeUtils-8vWA3KG0.js">
+  <link rel="modulepreload" crossorigin href="/assets/urlUtils-BTetwoTl.js">
+  <link rel="modulepreload" crossorigin href="/assets/memoryEstimations-5FasCmzS.js">
+  <link rel="modulepreload" crossorigin href="/assets/pbf-BLPQaZdP.js">
+  <link rel="modulepreload" crossorigin href="/assets/pbfQueryUtils-C_ZqASny.js">
+  <link rel="modulepreload" crossorigin href="/assets/queryUtils-B1mwzChs.js">
+  <link rel="modulepreload" crossorigin href="/assets/queryZScale-C8FPZzkM.js">
+  <link rel="modulepreload" crossorigin href="/assets/query-C7YmmDej.js">
+  <link rel="modulepreload" crossorigin href="/assets/executeQueryJSON-C1MciBjw.js">
+  <link rel="modulepreload" crossorigin href="/assets/NetworkElement-CJO_Q0iI.js">
+  <link rel="modulepreload" crossorigin href="/assets/globalCss-C_eQ6Atj.js">
+  <link rel="modulepreload" crossorigin href="/assets/legacyIcon-DLwRuDWY.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-chip-_pKCQItt.js">
+  <link rel="modulepreload" crossorigin href="/assets/calcite-tooltip-BuLzfACb.js">
+  <link rel="modulepreload" crossorigin href="/assets/QueryAssociationsParameters-oWygL2XP.js">
+  <link rel="modulepreload" crossorigin href="/assets/projector-CSRJ8xCy.js">
+  <link rel="modulepreload" crossorigin href="/assets/Widget-DlXtSHgq.js">
+  <link rel="modulepreload" crossorigin href="/assets/colorUtils-5BZcuylE.js">
+  <link rel="modulepreload" crossorigin href="/assets/mat2df32-DxRSQG4o.js">
+  <link rel="modulepreload" crossorigin href="/assets/mat2d-cxO3mSbI.js">
+  <link rel="modulepreload" crossorigin href="/assets/devEnvironmentUtils-CEdrLbXh.js">
+  <link rel="modulepreload" crossorigin href="/assets/webStyleSymbolUtils-CGTk0UY4.js">
+  <link rel="modulepreload" crossorigin href="/assets/symbolUtils-D0YW2pev.js">
+  <link rel="modulepreload" crossorigin href="/assets/ReactiveSet-Dv7UlY4v.js">
+  <link rel="modulepreload" crossorigin href="/assets/LayerConstants-Cw6MPW7M.js">
+  <link rel="modulepreload" crossorigin href="/assets/layerViewUtils-BqXau_gX.js">
+  <link rel="modulepreload" crossorigin href="/assets/actionUtils-wvaNWrqP.js">
+  <link rel="modulepreload" crossorigin href="/assets/Camera-JbH5R2_6.js">
+  <link rel="modulepreload" crossorigin href="/assets/Viewpoint-DmWWW5Lm.js">
+  <link rel="modulepreload" crossorigin href="/assets/mapCollectionUtils-BamzukJ3.js">
+  <link rel="modulepreload" crossorigin href="/assets/quickselect-BKVgcrsj.js">
+  <link rel="modulepreload" crossorigin href="/assets/PooledRBush-BF_dA2EB.js">
+  <link rel="modulepreload" crossorigin href="/assets/projectBoundingRect-CaYs6VtP.js">
+  <link rel="modulepreload" crossorigin href="/assets/projectPointToVector-gG2NL-D4.js">
+  <link rel="modulepreload" crossorigin href="/assets/quatf64-CwpDH0r1.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec2f64-IO40D2xB.js">
+  <link rel="modulepreload" crossorigin href="/assets/vectorStacks-DsKWBTda.js">
+  <link rel="modulepreload" crossorigin href="/assets/mathUtils-Duma4jma.js">
+  <link rel="modulepreload" crossorigin href="/assets/plane-8bvi8oVn.js">
+  <link rel="modulepreload" crossorigin href="/assets/ObjectStack-DcapzbTw.js">
+  <link rel="modulepreload" crossorigin href="/assets/ray-ifamUB2c.js">
+  <link rel="modulepreload" crossorigin href="/assets/lineSegment-BSSoLxDT.js">
+  <link rel="modulepreload" crossorigin href="/assets/boundedPlane-DGVsxhTP.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec3-B-LtY-1m.js">
+  <link rel="modulepreload" crossorigin href="/assets/sphere-CMmq3X2i.js">
+  <link rel="modulepreload" crossorigin href="/assets/dehydratedPoint-DMO58ccB.js">
+  <link rel="modulepreload" crossorigin href="/assets/projectVectorToVector-BkDM-KJR.js">
+  <link rel="modulepreload" crossorigin href="/assets/projectVectorToPoint-DAXGhfFV.js">
+  <link rel="modulepreload" crossorigin href="/assets/dehydratedFeatureUtils-C7pXBy_P.js">
+  <link rel="modulepreload" crossorigin href="/assets/RenderCoordsHelper-CYKmp7-h.js">
+  <link rel="modulepreload" crossorigin href="/assets/TileKey-BzsjDjBx.js">
+  <link rel="modulepreload" crossorigin href="/assets/TilemapCache-u27EAdmT.js">
+  <link rel="modulepreload" crossorigin href="/assets/CollectionFlattener-BrD4UcTG.js">
+  <link rel="modulepreload" crossorigin href="/assets/TablesMixin-eZjewFuB.js">
+  <link rel="modulepreload" crossorigin href="/assets/modeUtils-5vkXpdE3.js">
+  <link rel="modulepreload" crossorigin href="/assets/UpdatingHandles-IrzE_HB8.js">
+  <link rel="modulepreload" crossorigin href="/assets/PropertiesPool-DgiDUvK7.js">
+  <link rel="modulepreload" crossorigin href="/assets/InputManager-C2mTU7xR.js">
+  <link rel="modulepreload" crossorigin href="/assets/loadAll-Vs7oLCfx.js">
+  <link rel="modulepreload" crossorigin href="/assets/writeUtils-BCk7bVtC.js">
+  <link rel="modulepreload" crossorigin href="/assets/Basemap-BaJSr9EY.js">
+  <link rel="modulepreload" crossorigin href="/assets/keybindings-BU8GPLwE.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationQueryTileCache-CXOrTJvr.js">
+  <link rel="modulepreload" crossorigin href="/assets/multiOriginJSONSupportUtils-KzlGgPiU.js">
+  <link rel="modulepreload" crossorigin href="/assets/resourceExtension-BFQHUfm8.js">
+  <link rel="modulepreload" crossorigin href="/assets/persistable-BMjQ--NV.js">
+  <link rel="modulepreload" crossorigin href="/assets/PolygonCollection-kC7EIwTk.js">
+  <link rel="modulepreload" crossorigin href="/assets/editableLayers-BMgQP-AL.js">
+  <link rel="modulepreload" crossorigin href="/assets/GraphicsCollection-CJbnnpwD.js">
+  <link rel="modulepreload" crossorigin href="/assets/Theme-CbPrxV6_.js">
+  <link rel="modulepreload" crossorigin href="/assets/clock-DrkwTe3v.js">
+  <link rel="modulepreload" crossorigin href="/assets/screenUtils-CCLRM2mU.js">
+  <link rel="modulepreload" crossorigin href="/assets/HighlightDefaults-tjce7Po1.js">
+  <link rel="modulepreload" crossorigin href="/assets/attributionUtils-oBX9LG1M.js">
+  <link rel="modulepreload" crossorigin href="/assets/heightModelInfoUtils-CSeuIQ3Q.js">
+  <link rel="modulepreload" crossorigin href="/assets/DebugRendererInfo-IzJAyK7D.js">
+  <link rel="modulepreload" crossorigin href="/assets/capabilities-D7gFMhgU.js">
+  <link rel="modulepreload" crossorigin href="/assets/ViewingMode-DvtDudva.js">
+  <link rel="modulepreload" crossorigin href="/assets/integratedMesh3DTilesLayerViewInstanceUtils-Cugwwvy5.js">
+  <link rel="modulepreload" crossorigin href="/assets/localRotationUtils-DLPD1ZaV.js">
+  <link rel="modulepreload" crossorigin href="/assets/computeTranslationToOriginAndRotation-pKKSBtyO.js">
+  <link rel="modulepreload" crossorigin href="/assets/frustum-CN6WwNkt.js">
+  <link rel="modulepreload" crossorigin href="/assets/RenderCamera-Bid5OK79.js">
+  <link rel="modulepreload" crossorigin href="/assets/HUDIntersectorResult-C2kWMO8-.js">
+  <link rel="modulepreload" crossorigin href="/assets/quat-C12KTme5.js">
+  <link rel="modulepreload" crossorigin href="/assets/Attribute-DyLIUiq7.js">
+  <link rel="modulepreload" crossorigin href="/assets/orientedBoundingBox-DRI6xGYB.js">
+  <link rel="modulepreload" crossorigin href="/assets/Intersector-LbffBWl2.js">
+  <link rel="modulepreload" crossorigin href="/assets/Frustum-VwlbhqHV.js">
+  <link rel="modulepreload" crossorigin href="/assets/atmosphereUtils-ChGKHfEr.js">
+  <link rel="modulepreload" crossorigin href="/assets/webgl-D10TstAC.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationProvider-PNKGwBkt.js">
+  <link rel="modulepreload" crossorigin href="/assets/cameraUtils-CwLovCAS.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationSampler-B9o6DlnA.js">
+  <link rel="modulepreload" crossorigin href="/assets/TileInfo-BxegXsNQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/terrainUtils-UKQDuDKS.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationRange-ak_tJzu7.js">
+  <link rel="modulepreload" crossorigin href="/assets/extentUtils-BC0cNe8k.js">
+  <link rel="modulepreload" crossorigin href="/assets/weather-Cp-s9BvV.js">
+  <link rel="modulepreload" crossorigin href="/assets/sunUtils-D3Zg_mk4.js">
+  <link rel="modulepreload" crossorigin href="/assets/SceneLighting-jaFJipOd.js">
+  <link rel="modulepreload" crossorigin href="/assets/intersectionUtils-CSGCHslh.js">
+  <link rel="modulepreload" crossorigin href="/assets/unitBezier-BVG9AwJp.js">
+  <link rel="modulepreload" crossorigin href="/assets/easing-CW2PbtI-.js">
+  <link rel="modulepreload" crossorigin href="/assets/ray-Cn8JgQCl.js">
+  <link rel="modulepreload" crossorigin href="/assets/VoxelWasm-uHIxP6qn.js">
+  <link rel="modulepreload" crossorigin href="/assets/viewpointUtils-BNFWA2aG.js">
+  <link rel="modulepreload" crossorigin href="/assets/checkWebGLError-B8fqihYg.js">
+  <link rel="modulepreload" crossorigin href="/assets/enums-C3NXllrX.js">
+  <link rel="modulepreload" crossorigin href="/assets/Util-CCj2bNhE.js">
+  <link rel="modulepreload" crossorigin href="/assets/VertexAttributeLocations-B5kV3NVY.js">
+  <link rel="modulepreload" crossorigin href="/assets/VertexBuffer-sFAbUHm8.js">
+  <link rel="modulepreload" crossorigin href="/assets/Texture-BXf-3ygV.js">
+  <link rel="modulepreload" crossorigin href="/assets/Program-Bcb6kbka.js">
+  <link rel="modulepreload" crossorigin href="/assets/quantity-B76wyvR5.js">
+  <link rel="modulepreload" crossorigin href="/assets/unitFormatUtils-Z6DVsvk8.js">
+  <link rel="modulepreload" crossorigin href="/assets/debugFlags-Dn2hqv_P.js">
+  <link rel="modulepreload" crossorigin href="/assets/emissions-SYmfZ7-H.js">
+  <link rel="modulepreload" crossorigin href="/assets/VertexElementDescriptor-DVcI4qMB.js">
+  <link rel="modulepreload" crossorigin href="/assets/Util-CgCGvHb_.js">
+  <link rel="modulepreload" crossorigin href="/assets/BufferView-YI8uXCt4.js">
+  <link rel="modulepreload" crossorigin href="/assets/types-B6hGuDjA.js">
+  <link rel="modulepreload" crossorigin href="/assets/InterleavedLayout-BGWVgyHk.js">
+  <link rel="modulepreload" crossorigin href="/assets/renderState-BYVJzqGl.js">
+  <link rel="modulepreload" crossorigin href="/assets/RenderNode-CcNLXp1H.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShaderTechnique-CAMYo3lh.js">
+  <link rel="modulepreload" crossorigin href="/assets/VertexArrayObject-B9NjQR5O.js">
+  <link rel="modulepreload" crossorigin href="/assets/debugFlags-DEXDRgyk.js">
+  <link rel="modulepreload" crossorigin href="/assets/Scheduler-CigsybuA.js">
+  <link rel="modulepreload" crossorigin href="/assets/Sync-Dl--Yu8O.js">
+  <link rel="modulepreload" crossorigin href="/assets/MaterialUtil-DaPbGhNV.js">
+  <link rel="modulepreload" crossorigin href="/assets/olidUtils-D_qkWUq6.js">
+  <link rel="modulepreload" crossorigin href="/assets/NoParameters-XZJ-8n06.js">
+  <link rel="modulepreload" crossorigin href="/assets/VisualVariablePassParameters-BC7STn1C.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShaderOutput-BpkC-wrv.js">
+  <link rel="modulepreload" crossorigin href="/assets/Indices-DLnf69I1.js">
+  <link rel="modulepreload" crossorigin href="/assets/triangle-XXYbO4fj.js">
+  <link rel="modulepreload" crossorigin href="/assets/StencilUtils-CcbTyNKA.js">
+  <link rel="modulepreload" crossorigin href="/assets/Geometry-CHoFVDgq.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShaderTechniqueConfiguration-DvmPjakj.js">
+  <link rel="modulepreload" crossorigin href="/assets/AlphaCutoff-Dj4-LvkI.js">
+  <link rel="modulepreload" crossorigin href="/assets/Uniform-FnPH-ujw.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float3PassUniform-YEiGS05C.js">
+  <link rel="modulepreload" crossorigin href="/assets/glsl-D85RBwKC.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float3DrawUniform-C2uWcyOr.js">
+  <link rel="modulepreload" crossorigin href="/assets/FloatPassUniform-DeUP8HjM.js">
+  <link rel="modulepreload" crossorigin href="/assets/Texture2DPassUniform-CiCHIiok.js">
+  <link rel="modulepreload" crossorigin href="/assets/Gamma.glsl-BiRghhbe.js">
+  <link rel="modulepreload" crossorigin href="/assets/Texture2DDrawUniform-D7tKvlQx.js">
+  <link rel="modulepreload" crossorigin href="/assets/oitResolution.glsl-DHGKUwhe.js">
+  <link rel="modulepreload" crossorigin href="/assets/Emissions.glsl-CHEom5a0.js">
+  <link rel="modulepreload" crossorigin href="/assets/ScreenSizePerspective.glsl-VuUDdzTh.js">
+  <link rel="modulepreload" crossorigin href="/assets/FloatBindUniform-C4h6J6-v.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float3BindUniform-BmdF9XGj.js">
+  <link rel="modulepreload" crossorigin href="/assets/Matrix4BindUniform-DnHs9Hq_.js">
+  <link rel="modulepreload" crossorigin href="/assets/Matrix4DrawUniform-CQqS-mc3.js">
+  <link rel="modulepreload" crossorigin href="/assets/View.glsl-u7L8AmT0.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float4PassUniform-Cu2daSgY.js">
+  <link rel="modulepreload" crossorigin href="/assets/VerticalOffset.glsl-3Al5p6Rc.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float4BindUniform-CcjALdTT.js">
+  <link rel="modulepreload" crossorigin href="/assets/BooleanBindUniform-B2b909hF.js">
+  <link rel="modulepreload" crossorigin href="/assets/AlignPixel.glsl-D_28Si9r.js">
+  <link rel="modulepreload" crossorigin href="/assets/GLTextureMaterial-DNWd2fiB.js">
+  <link rel="modulepreload" crossorigin href="/assets/Slice.glsl-CjvAkseN.js">
+  <link rel="modulepreload" crossorigin href="/assets/ObjectAndLayerIdColor.glsl-UC9jbvaT.js">
+  <link rel="modulepreload" crossorigin href="/assets/HighlightReadBitmap.glsl-gSqhLTwZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/IntegerBindUniform--7lrioD5.js">
+  <link rel="modulepreload" crossorigin href="/assets/Texture2DBindUniform-4_yYNByJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/OutputHighlight.glsl-CfLvc4dK.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float2BindUniform-C6b2PHzh.js">
+  <link rel="modulepreload" crossorigin href="/assets/ReadDepth.glsl-Ca_0z8Pl.js">
+  <link rel="modulepreload" crossorigin href="/assets/PositionOutsideClipSpace-CLdt_M-O.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float4sPassUniform-B1UFJ1Pq.js">
+  <link rel="modulepreload" crossorigin href="/assets/FloatsPassUniform-DfJ8EJ1F.js">
+  <link rel="modulepreload" crossorigin href="/assets/Matrix3PassUniform-B98tjNzt.js">
+  <link rel="modulepreload" crossorigin href="/assets/VisualVariables.glsl-Co37YOvb.js">
+  <link rel="modulepreload" crossorigin href="/assets/ColorConversion.glsl-C9xFjUmo.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float2PassUniform-BYZ61_RB.js">
+  <link rel="modulepreload" crossorigin href="/assets/IntegerPassUniform-DN8CxRD1.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShaderBuilder-8uuwgR05.js">
+  <link rel="modulepreload" crossorigin href="/assets/ScreenSpacePass.glsl-9L-_X5OK.js">
+  <link rel="modulepreload" crossorigin href="/assets/FocusAreaColor.glsl-H_KA-QDX.js">
+  <link rel="modulepreload" crossorigin href="/assets/FocusAreaColorNode-CltwSwqs.js">
+  <link rel="modulepreload" crossorigin href="/assets/alphaCutoff.glsl-WbW_sSK3.js">
+  <link rel="modulepreload" crossorigin href="/assets/EmissionDimming.glsl-BXZlyzId.js">
+  <link rel="modulepreload" crossorigin href="/assets/ditherNoise.glsl-UOpZ2vbN.js">
+  <link rel="modulepreload" crossorigin href="/assets/OutputColorHighlightOLID.glsl-CzPahQyj.js">
+  <link rel="modulepreload" crossorigin href="/assets/HUDMaterial.glsl-LsGlcctJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/DefaultTechniqueConfiguration-BhPBTeil.js">
+  <link rel="modulepreload" crossorigin href="/assets/HUDMaterial-07Ub2jz9.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec3f32-CQLLad-g.js">
+  <link rel="modulepreload" crossorigin href="/assets/FloatArray-Bofprny0.js">
+  <link rel="modulepreload" crossorigin href="/assets/line-u1kkEuO_.js">
+  <link rel="modulepreload" crossorigin href="/assets/GeometryUtil-C-mNfuTk.js">
+  <link rel="modulepreload" crossorigin href="/assets/IntersectorTarget-g_nvOJHu.js">
+  <link rel="modulepreload" crossorigin href="/assets/Intersector-3HdpeoHe.js">
+  <link rel="modulepreload" crossorigin href="/assets/layerUtils-mS_jW32X.js">
+  <link rel="modulepreload" crossorigin href="/assets/edgeUtils-C_VA416V.js">
+  <link rel="modulepreload" crossorigin href="/assets/RayIntersections-C6FqrAqc.js">
+  <link rel="modulepreload" crossorigin href="/assets/TriangleTechniqueConfiguration-g8e8fJvc.js">
+  <link rel="modulepreload" crossorigin href="/assets/intersectWithPolygonOffset-C5r-Ybgd.js">
+  <link rel="modulepreload" crossorigin href="/assets/NormalAttribute.glsl-C7jpaUvF.js">
+  <link rel="modulepreload" crossorigin href="/assets/DoublePrecision.glsl-7AQh4H5L.js">
+  <link rel="modulepreload" crossorigin href="/assets/VertexPosition.glsl-C8ahyCCs.js">
+  <link rel="modulepreload" crossorigin href="/assets/DiscardOrAdjustAlpha.glsl-4leSdqyk.js">
+  <link rel="modulepreload" crossorigin href="/assets/pbrUtils-DlI-GbzV.js">
+  <link rel="modulepreload" crossorigin href="/assets/Offset.glsl-DlxeJxhu.js">
+  <link rel="modulepreload" crossorigin href="/assets/ForwardLinearDepth.glsl-DgvdPZSv.js">
+  <link rel="modulepreload" crossorigin href="/assets/ForwardLinearDepthToWriteShadowMap.glsl-BdBeU_ay.js">
+  <link rel="modulepreload" crossorigin href="/assets/Transform.glsl-CM6cQEqg.js">
+  <link rel="modulepreload" crossorigin href="/assets/Matrix4PassUniform-Bb5ATfS6.js">
+  <link rel="modulepreload" crossorigin href="/assets/doublePrecisionUtils-DAAZLysj.js">
+  <link rel="modulepreload" crossorigin href="/assets/OutputDepth.glsl-C_Yal9Dw.js">
+  <link rel="modulepreload" crossorigin href="/assets/TextureTransformUV.glsl-D-U1ZfQQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/VertexColor.glsl-DrV8C2l2.js">
+  <link rel="modulepreload" crossorigin href="/assets/Float2DrawUniform-BbCPIPVz.js">
+  <link rel="modulepreload" crossorigin href="/assets/ComputeNormalTexture.glsl-DJodqOd-.js">
+  <link rel="modulepreload" crossorigin href="/assets/PiUtils.glsl-CpyVHJCx.js">
+  <link rel="modulepreload" crossorigin href="/assets/PhysicallyBasedRendering.glsl-BFHZucno.js">
+  <link rel="modulepreload" crossorigin href="/assets/CameraSpace.glsl-LQZFWYSr.js">
+  <link rel="modulepreload" crossorigin href="/assets/SSAO.glsl-CqL0eDgG.js">
+  <link rel="modulepreload" crossorigin href="/assets/SSAOBlur.glsl-BvIqNrOy.js">
+  <link rel="modulepreload" crossorigin href="/assets/EvaluateAmbientLighting.glsl-BbYe-Nat.js">
+  <link rel="modulepreload" crossorigin href="/assets/MainLighting.glsl-BzpgU6pB.js">
+  <link rel="modulepreload" crossorigin href="/assets/ScreenSpaceRayMarching.glsl-CHeCgPTI.js">
+  <link rel="modulepreload" crossorigin href="/assets/GlobalIlluminationColorQuantization.glsl-DASwhWnI.js">
+  <link rel="modulepreload" crossorigin href="/assets/GlobalIllumination.glsl-CNAkCg2W.js">
+  <link rel="modulepreload" crossorigin href="/assets/GlobalIlluminationWeights.glsl-Bk-lJUwL.js">
+  <link rel="modulepreload" crossorigin href="/assets/GlobalIlluminationBlur.glsl-D73ZevDU.js">
+  <link rel="modulepreload" crossorigin href="/assets/GlobalIlluminationUpscale.glsl-dECWiCae.js">
+  <link rel="modulepreload" crossorigin href="/assets/ToneMapping.glsl-BO4QToFy.js">
+  <link rel="modulepreload" crossorigin href="/assets/EvaluateSceneLighting.glsl-lk8xFtKS.js">
+  <link rel="modulepreload" crossorigin href="/assets/Normals.glsl-D2dK_E0k.js">
+  <link rel="modulepreload" crossorigin href="/assets/SnowCover.glsl-BNTLK0a2.js">
+  <link rel="modulepreload" crossorigin href="/assets/Matrix4sPassUniform-BCkM81Sa.js">
+  <link rel="modulepreload" crossorigin href="/assets/Texture2DShadowBindUniform-K3x5AtUd.js">
+  <link rel="modulepreload" crossorigin href="/assets/ReadShadowMap.glsl-oFMVskK0.js">
+  <link rel="modulepreload" crossorigin href="/assets/MixExternalColor.glsl-cTOJOQI5.js">
+  <link rel="modulepreload" crossorigin href="/assets/DefaultMaterial.glsl-9xijjBkG.js">
+  <link rel="modulepreload" crossorigin href="/assets/DefaultMaterialTechniqueConfiguration-XVX3HN_V.js">
+  <link rel="modulepreload" crossorigin href="/assets/RealisticTree.glsl-Bhg2mSKu.js">
+  <link rel="modulepreload" crossorigin href="/assets/DefaultMaterial-0OsE6nf5.js">
+  <link rel="modulepreload" crossorigin href="/assets/defaultSymbolComplexity-D-ZNdxDv.js">
+  <link rel="modulepreload" crossorigin href="/assets/elevationAlignmentUtils-B-6qwbnv.js">
+  <link rel="modulepreload" crossorigin href="/assets/hydratedFeatures-b3bjx2Xg.js">
+  <link rel="modulepreload" crossorigin href="/assets/MeshLocalVertexSpace-WYz7rCQq.js">
+  <link rel="modulepreload" crossorigin href="/assets/meshVertexSpaceUtils-CQyDf5bG.js">
+  <link rel="modulepreload" crossorigin href="/assets/graphicUtils-Ci0gL04e.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationContext-Cy8zpgPL.js">
+  <link rel="modulepreload" crossorigin href="/assets/symbolColorUtils-CUxh631U.js">
+  <link rel="modulepreload" crossorigin href="/assets/Octree-BYmniw_W.js">
+  <link rel="modulepreload" crossorigin href="/assets/WebGLLayer-xLuVajHK.js">
+  <link rel="modulepreload" crossorigin href="/assets/constants-BMmHAHld.js">
+  <link rel="modulepreload" crossorigin href="/assets/LineCallout.glsl-BPMaQIC2.js">
+  <link rel="modulepreload" crossorigin href="/assets/quantizationUtils-BRARnV-x.js">
+  <link rel="modulepreload" crossorigin href="/assets/densificationConstants-GCpcX80s.js">
+  <link rel="modulepreload" crossorigin href="/assets/dehydratedFeatureComparison-CiNlUeZC.js">
+  <link rel="modulepreload" crossorigin href="/assets/dehydratedFeatures-BCuhoTKU.js">
+  <link rel="modulepreload" crossorigin href="/assets/OptimizedGeometry-BQN3HLcq.js">
+  <link rel="modulepreload" crossorigin href="/assets/featureConversionUtils-DlUtFYFL.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationUpdateEvent-CkyicjH0.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationQuery-CznT0SAa.js">
+  <link rel="modulepreload" crossorigin href="/assets/labelFormatUtils-DUrVssoo.js">
+  <link rel="modulepreload" crossorigin href="/assets/fontUtils-SBdnx5jk.js">
+  <link rel="modulepreload" crossorigin href="/assets/videoUtils-CfWiaAKT.js">
+  <link rel="modulepreload" crossorigin href="/assets/ManagedTexture-lAhCoFRR.js">
+  <link rel="modulepreload" crossorigin href="/assets/MarkerSizing.glsl-CQcPdtw5.js">
+  <link rel="modulepreload" crossorigin href="/assets/RibbonLine.glsl-BkBGVwpS.js">
+  <link rel="modulepreload" crossorigin href="/assets/RibbonLineMaterial-y4KgwouW.js">
+  <link rel="modulepreload" crossorigin href="/assets/GridLocalOriginFactory-7ZuRt_AW.js">
+  <link rel="modulepreload" crossorigin href="/assets/TextTextureAtlas-CnhOuLv8.js">
+  <link rel="modulepreload" crossorigin href="/assets/Labeler-CyfoOn_m.js">
+  <link rel="modulepreload" crossorigin href="/assets/Lyr3DWasm-BGy_NjxC.js">
+  <link rel="modulepreload" crossorigin href="/assets/MemoryController-DARKyu2F.js">
+  <link rel="modulepreload" crossorigin href="/assets/a11yUtils-DHOFFZiP.js">
+  <link rel="modulepreload" crossorigin href="/assets/elevationInfoUtils-DSDCM9UR.js">
+  <link rel="modulepreload" crossorigin href="/assets/Intersector-Cpw56Hri.js">
+  <link rel="modulepreload" crossorigin href="/assets/Intersector-CnfWArGB.js">
+  <link rel="modulepreload" crossorigin href="/assets/intersectorUtilsConversions-BuHDqNN5.js">
+  <link rel="modulepreload" crossorigin href="/assets/hitTest-B1Nimpea.js">
+  <link rel="modulepreload" crossorigin href="/assets/hitTestSelectUtils-CY6HINNw.js">
+  <link rel="modulepreload" crossorigin href="/assets/LayerViewPerformanceInfo-Cu5AI5ov.js">
+  <link rel="modulepreload" crossorigin href="/assets/DefaultLoadingContext-B1_MNi6H.js">
+  <link rel="modulepreload" crossorigin href="/assets/NestedMap-Z_YnKobK.js">
+  <link rel="modulepreload" crossorigin href="/assets/wosrLoader-CZvccMIi.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationTileData-w5u8-sLA.js">
+  <link rel="modulepreload" crossorigin href="/assets/ElevationSamplerData-D4GNV5SX.js">
+  <link rel="modulepreload" crossorigin href="/assets/updatingProperties-DFxGgjaJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/RenderPlugin-C2vGCwDU.js">
+  <link rel="modulepreload" crossorigin href="/assets/Texture2DUintPassUniform-B2S1A2cs.js">
+  <link rel="modulepreload" crossorigin href="/assets/HighlightDownsample.glsl-By0_hZfb.js">
+  <link rel="modulepreload" crossorigin href="/assets/HighlightCellGridScreenSpacePass.glsl-CI6LME6Q.js">
+  <link rel="modulepreload" crossorigin href="/assets/HighlightApply.glsl-BFXvfFOY.js">
+  <link rel="modulepreload" crossorigin href="/assets/HighlightBlur.glsl-BgaU0lQK.js">
+  <link rel="modulepreload" crossorigin href="/assets/HighlightToSingle.glsl-GfycFOU_.js">
+  <link rel="modulepreload" crossorigin href="/assets/axisAngleDegrees-B6o9Ak9G.js">
+  <link rel="modulepreload" crossorigin href="/assets/Texture.glsl-DtSAOhFN.js">
+  <link rel="modulepreload" crossorigin href="/assets/OverlayCompositing.glsl-Dr0Fze0M.js">
+  <link rel="modulepreload" crossorigin href="/assets/OverlayRenderer-CndmAdRt.js">
+  <link rel="modulepreload" crossorigin href="/assets/TextureBackedBufferUtils-DAj2nv72.js">
+  <link rel="modulepreload" crossorigin href="/assets/GLMaterialLoader-X33ep5hV.js">
+  <link rel="modulepreload" crossorigin href="/assets/glUtil3D-CJWOf00u.js">
+  <link rel="modulepreload" crossorigin href="/assets/Normals-DcYBCEDQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/tileUtils-CsJYQUK_.js">
+  <link rel="modulepreload" crossorigin href="/assets/BackgroundGrid.glsl-pCVrjbsy.js">
+  <link rel="modulepreload" crossorigin href="/assets/TileComposite.glsl-tlMaV8c_.js">
+  <link rel="modulepreload" crossorigin href="/assets/BlendLayers.glsl-ByaL2B0w.js">
+  <link rel="modulepreload" crossorigin href="/assets/TileKey-DMmFB8DK.js">
+  <link rel="modulepreload" crossorigin href="/assets/ScheduledQueueProcessor-BOWiktPd.js">
+  <link rel="modulepreload" crossorigin href="/assets/TileStrategy-BsWEJVGn.js">
+  <link rel="modulepreload" crossorigin href="/assets/constants-CqG_rsxl.js">
+  <link rel="modulepreload" crossorigin href="/assets/mat3f32-OcNbPm7L.js">
+  <link rel="modulepreload" crossorigin href="/assets/GeometryUtils-ZiqQ7F_k.js">
+  <link rel="modulepreload" crossorigin href="/assets/VectorTile-D0abl-JS.js">
+  <link rel="modulepreload" crossorigin href="/assets/BooleanPassUniform-AaK-BoNM.js">
+  <link rel="modulepreload" crossorigin href="/assets/RasterColorizer.glsl-C9ofFHZk.js">
+  <link rel="modulepreload" crossorigin href="/assets/WorkerHandle-C4ZdvCwr.js">
+  <link rel="modulepreload" crossorigin href="/assets/CloudsParallaxShading.glsl-BBqEefmz.js">
+  <link rel="modulepreload" crossorigin href="/assets/WaterColor.glsl-giKw2Edh.js">
+  <link rel="modulepreload" crossorigin href="/assets/OutputHighlightOverlay--EX3tcXg.js">
+  <link rel="modulepreload" crossorigin href="/assets/NormalUtils.glsl-BTc1OVOC.js">
+  <link rel="modulepreload" crossorigin href="/assets/Terrain.glsl-vvJiPmAO.js">
+  <link rel="modulepreload" crossorigin href="/assets/TextureCompressionTracker-BQdN9gtE.js">
+  <link rel="modulepreload" crossorigin href="/assets/RenderGeometry-CQ8zw65c.js">
+  <link rel="modulepreload" crossorigin href="/assets/floatRGBA-C7MjnnkJ.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec3-DfLXyQ9a.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec32-BRbr76k7.js">
+  <link rel="modulepreload" crossorigin href="/assets/BufferManager-DAE82CQI.js">
+  <link rel="modulepreload" crossorigin href="/assets/Texture2DUintDrawUniform-BTyrpo6z.js">
+  <link rel="modulepreload" crossorigin href="/assets/TextureBackedBufferLayout-24VA8BRC.js">
+  <link rel="modulepreload" crossorigin href="/assets/DefaultLayouts-ocbfL43f.js">
+  <link rel="modulepreload" crossorigin href="/assets/SphereIntersect.glsl-DoZEFl8k.js">
+  <link rel="modulepreload" crossorigin href="/assets/ComponentShader.glsl-BKeailsW.js">
+  <link rel="modulepreload" crossorigin href="/assets/ChapmanRaymarching.glsl-QsDFqvFt.js">
+  <link rel="modulepreload" crossorigin href="/assets/ScreenSpacePassAtmosphere.glsl-BUOp4Xvv.js">
+  <link rel="modulepreload" crossorigin href="/assets/ChapmanAtmosphere.glsl-Cgie9zMm.js">
+  <link rel="modulepreload" crossorigin href="/assets/AtmosphereCompositing.glsl-D-wrTcam.js">
+  <link rel="modulepreload" crossorigin href="/assets/SimpleAtmosphere.glsl-BoFp31bH.js">
+  <link rel="modulepreload" crossorigin href="/assets/CloudsComposition.glsl-CEnkJTyz.js">
+  <link rel="modulepreload" crossorigin href="/assets/DistanceFalloff.glsl-BirP-hBU.js">
+  <link rel="modulepreload" crossorigin href="/assets/Fog.glsl-FIiDNBm4.js">
+  <link rel="modulepreload" crossorigin href="/assets/Compositing.glsl-Bpr8amf_.js">
+  <link rel="modulepreload" crossorigin href="/assets/Blit-CFH5ztMf.js">
+  <link rel="modulepreload" crossorigin href="/assets/vec4f32-BH1UDHt2.js">
+  <link rel="modulepreload" crossorigin href="/assets/GlowBlur.glsl-k8Xon_tl.js">
+  <link rel="modulepreload" crossorigin href="/assets/GlowComposition.glsl-BLdwZsb-.js">
+  <link rel="modulepreload" crossorigin href="/assets/HazeCompositing.glsl-CBv5wqsi.js">
+  <link rel="modulepreload" crossorigin href="/assets/Haze.glsl-BNICb0lZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/calculateUVZShadowFromDepth.glsl-BB3WDROO.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShadowHighlight.glsl-ByVin7rE.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShadowHighlightBuffer.glsl-CbsQJxVC.js">
+  <link rel="modulepreload" crossorigin href="/assets/Magnifier.glsl-KdO1irgs.js">
+  <link rel="modulepreload" crossorigin href="/assets/BlendWeights.glsl-Cakmxwk1.js">
+  <link rel="modulepreload" crossorigin href="/assets/Blur.glsl-B0gn8tOo.js">
+  <link rel="modulepreload" crossorigin href="/assets/EdgeDetect.glsl-B8tvV90_.js">
+  <link rel="modulepreload" crossorigin href="/assets/Stars.glsl-B_z2a73K.js">
+  <link rel="modulepreload" crossorigin href="/assets/NoiseTextureAtlasDimensions-2DdPofnf.js">
+  <link rel="modulepreload" crossorigin href="/assets/Clouds.glsl-zXcdKKxm.js">
+  <link rel="modulepreload" crossorigin href="/assets/NoiseTextureAtlas.glsl-ChvmglsT.js">
+  <link rel="modulepreload" crossorigin href="/assets/Precipitation.glsl-DFyw30jY.js">
+  <link rel="modulepreload" crossorigin href="/assets/oitBlendFragment.glsl-6WOgppV8.js">
+  <link rel="modulepreload" crossorigin href="/assets/OITBlendEmission.glsl-BEeGdPE7.js">
+  <link rel="modulepreload" crossorigin href="/assets/OITBlend.glsl-C4nCoFIi.js">
+  <link rel="modulepreload" crossorigin href="/assets/OITDimOpaque.glsl-DChZTr5r.js">
+  <link rel="modulepreload" crossorigin href="/assets/FocusAreaMask.glsl-CRbVODeq.js">
+  <link rel="modulepreload" crossorigin href="/assets/focusAreaMaskUtils-DGzKE0zZ.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShadowCastAccumulate.glsl-CY0N4sbX.js">
+  <link rel="modulepreload" crossorigin href="/assets/BlendColorsPremultiplied.glsl-BnH2fynI.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShadowCastVisualize.glsl-DMwjPlKp.js">
+  <link rel="modulepreload" crossorigin href="/assets/ShadowCastClear.glsl-1ModlNLR.js">
+  <link rel="modulepreload" crossorigin href="/assets/IManagedTexture-Z5Q_OKpj.js">
+  <link rel="modulepreload" crossorigin href="/assets/imageUtils-Ctf6lNBH.js">
+  <link rel="modulepreload" crossorigin href="/assets/screenshotUtils-1-WQzv91.js">
+  <link rel="modulepreload" crossorigin href="/assets/edgePreprocessing-CytyeT4p.js">
+  <link rel="modulepreload" crossorigin href="/assets/drapedUtils-DUvxkRED.js">
+  <link rel="modulepreload" crossorigin href="/assets/makeScheduleFunction-DC3rZVdI.js">
+  <link rel="modulepreload" crossorigin href="/assets/originUtils-DpOUglwR.js">
+  <link rel="modulepreload" crossorigin href="/assets/jsonContext-CpCw0lD4.js">
+  <link rel="modulepreload" crossorigin href="/assets/resourceUtils-CokgD91K.js">
+  <link rel="modulepreload" crossorigin href="/assets/resourceUtils-BGvETv-F.js">
+  <link rel="modulepreload" crossorigin href="/assets/saveUtils-OyTuXpi2.js">
+  <link rel="modulepreload" crossorigin href="/assets/project-CNm8EKSi.js">
+  <link rel="modulepreload" crossorigin href="/assets/AnalysisOriginWebScene-O-IU0k1t.js">
+  <link rel="modulepreload" crossorigin href="/assets/useSizeOverride-DeVJFQpL.js">
+  <link rel="modulepreload" crossorigin href="/assets/GraphicsLayer-CSUhoWih.js">
+  <link rel="modulepreload" crossorigin href="/assets/QueryEngineCapabilities-Br9O8FfG.js">
+  <link rel="modulepreload" crossorigin href="/assets/clientSideDefaults-D7IdFxYk.js">
+  <link rel="modulepreload" crossorigin href="/assets/GeoJSONLayer-Bsq4_h7g.js">
+  <link rel="stylesheet" crossorigin href="/assets/runtime-CGbH87qM.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-BbKTUuYw.css">
+</head>
+
+<body>
+  <calcite-shell>
+    
+    <!-- HEADER -->
+    <calcite-navigation slot="header">
+      <calcite-navigation-logo 
+        slot="logo" 
+        heading="MELBOURNE TRANSIT PULSE"
+        description="Real-Time Network Dynamics & Spatial Twin">
+      </calcite-navigation-logo>
+    </calcite-navigation>
+
+    <!-- LEFT SIDEBAR PANEL -->
+    <calcite-shell-panel slot="panel-start" width-scale="m">
+      
+      <!-- PANEL 1: ABOUT & GUIDE -->
+      <calcite-panel>
+        <div class="panel-inner-container">
+
+          <!-- About Text -->
+          <p class="about-text">
+            Welcome to <strong>Melbourne Transit Pulse</strong>—a live map showing Melbourne's trains moving in real time.
+             This app uses live public transport data from Transport Victoria to show how the train network moves throughout the day.
+             The data is updated every 30 seconds.
+          </p>
+
+          <!-- How To Use -->
+          <div class="section-label how-to-label">
+            HOW TO USE
+          </div>
+
+          <div class="instructions-list">
+            <div class="instruction-item">
+              <span class="icon-badge icon-badge-blue">🔍</span>
+              <span><strong>Zoom</strong> to view stations.</span>
+            </div>
+
+            <div class="instruction-item">
+              <span class="icon-badge icon-badge-green">🚆</span>
+              <span><strong>Click</strong> a train for live details.</span>
+            </div>
+          </div>
+
+          <!-- Train Legend -->
+          <div class="legend-card">
+            <div class="section-label">
+              TRAIN LEGEND
+            </div>
+
+            <div class="legend-items">
+              <div class="legend-item">
+                <span class="legend-symbol">▲</span> Moving
+              </div>
+
+              <div class="legend-item">
+                <span class="legend-symbol">⚫</span> Stationary
+              </div>
+
+              <div class="legend-item">
+                <span class="legend-symbol">⋯⋯</span> Path
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- CLOSED CONTAINER DIV FIXES SHADOW DOM / MAP BREAKAGE -->
+      </calcite-panel>
+
+      <!-- PANEL 2: DYNAMIC LIVE STATUS -->
+      <calcite-panel id="transit-side-panel" heading="Live Network Status">
+        <!-- Injected via TypeScript -->
+      </calcite-panel>
+
+    </calcite-shell-panel>
+
+    <!-- 3D ARCGIS SCENE (SLOTTED DIRECTLY INTO SHELL MAIN CONTENT) -->
+    <arcgis-scene basemap="dark-gray-vector" id="safety-scene">
+      <arcgis-zoom position="top-right"></arcgis-zoom>
+    </arcgis-scene>
+
+  </calcite-shell>
+
+</body>
+
+</html>

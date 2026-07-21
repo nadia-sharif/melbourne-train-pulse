@@ -1,0 +1,1 @@
+import{t as e}from"./signal-BwtR6Sr1.js";var t=class{constructor(){this._pendingCompressionTasks=e(0)}get compressing(){return!!this._pendingCompressionTasks.value}increment(){this._pendingCompressionTasks.value++}decrement(){this._pendingCompressionTasks.value--}};export{t};
