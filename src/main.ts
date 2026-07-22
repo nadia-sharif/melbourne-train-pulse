@@ -73,7 +73,8 @@ loadStations();
 
 // --- STEP 2:Create TRAIN STATIONS as GeoJSON LAYER for Map WITH TEXT LABELS ---
 const stationLayer = new GeoJSONLayer({
-  url: "/data/train_stops.geojson", // or imported relative path
+  //url: "/data/train_stops.geojson", // or imported relative path
+  url:`${import.meta.env.BASE_URL}data/train_stops.geojson`,
   title: "Train Stations",
 
   // Only show markers & labels when zoomed in closer than 1:50,000 scale
